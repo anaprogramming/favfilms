@@ -226,3 +226,61 @@ h4{
     transform: scale(1.1);
 
   }
+ /*naslov AboutUs css*/
+
+ .AboutUs-text {
+  position: relative;
+  transition: transform 0.2s;
+  text-align: center;
+  margin-left: 500px;
+  margin-right: 500px;
+  color: white;
+  z-index: 1;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 30px;
+}
+
+.AboutUs-text:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 0%;
+  height: 100%;
+  border-radius: 50% 0% 50% 0%;
+  background-color: rgba(255, 249, 215, 0);
+  transition: all 0.5s;
+  z-index: -1;
+
+}
+
+.AboutUs-text:hover:after {
+  width: 100%;
+  background-color:#fd9648 ;
+}
+.AboutUs-text:hover {
+  transform: scale(1.1);
+
+}
+
+/*FOOTER*/
+.footer-container {
+  background-color: #5c6e89;
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+}
+
+.footer-text {
+  text-align: center;
+  color: #fff;
+ padding-bottom: 10px;
+ padding-top: 10px;
+  margin: 8px;
+
+}
