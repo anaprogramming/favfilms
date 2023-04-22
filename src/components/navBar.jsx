@@ -15,7 +15,7 @@ function navBar({pretrazi}) {
                     <li className="nav__item">   <Link to='/'>Home</Link></li>
                     <li className="nav__item"> <Link to='/filmovi'>Movies</Link></li>
                     <li className="nav__item"> <Link to='/listaGledanja'>Watch list</Link></li>
-                    <li className="nav__item"> <Link to='/onama'>About us</Link></li>
+                    <li className="nav__item"> <Link to='/AboutUs'>About us</Link></li>
 
                 </ul>
         </nav>
