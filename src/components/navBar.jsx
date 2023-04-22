@@ -1,5 +1,6 @@
+
 import { Link } from 'react-router-dom';
-function NavBar({pretrazi}) {
+function navBar({pretrazi}) {
   return (
     <div>
         <nav className="nav">
@@ -22,4 +23,4 @@ function NavBar({pretrazi}) {
   );
 }
 
-export default NavBar;
+export default navBar;

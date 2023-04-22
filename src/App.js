@@ -2,17 +2,17 @@ import NavBar from './components/NavBar';
 import './App.css';
 import { BrowserRouter,Route,Routes } from 'react-router-dom';
 import Home from './components/Home';
-import ONama from './components/ONama';
+import AboutUs from './components/AboutUs';
 import Footer from './components/Footer';
 import Filmovi from './components/Filmovi';
 import { useState } from 'react';
 import ListaGledanja from './components/ListaGledanja';
-import CopyButton from "./components/CopyButton";
+
 
 function App() {
   const [listaFilmova,setListaF]=useState([]);
 
-  const email = "himovies123@gmail.com";
+ 
 
   const[sviFilmovi] = useState([
 
@@ -109,37 +109,38 @@ function App() {
 
   function dodaj(id){
     for(var i=0;i<sviFilmovi.length;i++){
-      if(sviFilmovi[i].id==id){
+      if(sviFilmovi[i].id===id){
         sviFilmovi[i].lista=1;
       }
     }
-    var niz = sviFilmovi.filter((film)=>film.lista==1);
+    var niz = sviFilmovi.filter((film)=>film.lista===1);
     setListaF(niz);
   }
 
   function izbaci(id){
     for(var i=0;i<sviFilmovi.length;i++){
-      if(sviFilmovi[i].id==id){
+      if(sviFilmovi[i].id===id){
         sviFilmovi[i].lista=0;
       }
     }
-    var niz = sviFilmovi.filter((film)=>film.lista==1);
+    var niz = sviFilmovi.filter((film)=>film.lista===1);
     setListaF(niz);
   }
 
   return (
 
     <div>
+      <p>Ana</p>
     <BrowserRouter>
         <NavBar pretrazi={pretrazi}></NavBar>
         <Routes>
             <Route path="/" element={<Home></Home>}></Route>
-            <Route path="/onama" element={<ONama></ONama>}></Route>
+            <Route path="/AboutUs" element={<AboutUs></AboutUs>}></Route>
             <Route path="/filmovi" element={<Filmovi kriterijum={krterijumPretrage} filmovi={sviFilmovi} dodaj={dodaj}></Filmovi>}></Route>
             <Route path="/listaGledanja" element={<ListaGledanja kriterijum={krterijumPretrage}  filmovi={listaFilmova} izbaci={izbaci}></ListaGledanja>}></Route>
           </Routes>
      </BrowserRouter>
-     <div className="kontejner"> <CopyButton textToCopy={email}/> </div>
+     
      <Footer></Footer>
   </div>
   );
