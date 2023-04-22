@@ -4,7 +4,7 @@ function navBar({pretrazi}) {
   return (
     <div>
         <nav className="nav">
-            <div className="nav__title"><h1><Favfilms></Favfilms></h1></div>
+            <div className="nav__title"><h1>Favfilms</h1></div>
                 <ul className="nav__list">
                     <li className="nav__item__search"> 
 

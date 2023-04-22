@@ -1,7 +1,7 @@
 
 function AboutUs() {
     return (
-      <div  className='AboutUs'>
+      <div  className="AboutUs">
 
       <div className="AboutUs-text">
           O nama:

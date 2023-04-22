@@ -1,18 +1,19 @@
-import NavBar from './components/NavBar';
-import './App.css';
-import { BrowserRouter,Route,Routes } from 'react-router-dom';
-import Home from './components/Home';
-import AboutUs from './components/AboutUs';
-import Footer from './components/Footer';
-import Filmovi from './components/Filmovi';
-import { useState } from 'react';
-import ListaGledanja from './components/ListaGledanja';
+import NavBar from "./components/NavBar";
+import "./App.css";
+import { BrowserRouter,Route,Routes } from "react-router-dom";
+import Home from "./components/Home";
+import AboutUs from "./components/AboutUs";
+import Footer from "./components/Footer";
+import Filmovi from "./components/Filmovi";
+import { useState } from "react";
+import ListaGledanja from "./components/ListaGledanja";
 
 
 function App() {
   const [listaFilmova,setListaF]=useState([]);
 
  
+
 
   const[sviFilmovi] = useState([
 
@@ -130,7 +131,7 @@ function App() {
   return (
 
     <div>
-      <p>Ana</p>
+     
     <BrowserRouter>
         <NavBar pretrazi={pretrazi}></NavBar>
         <Routes>
