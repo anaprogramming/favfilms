@@ -6,7 +6,7 @@ function Footer() {
                 © 2023 Copyright: Himovies 
             </div> 
             <div className="footer-text" >
-                Email: himovies123@gmail.com
+                Email: favmovies@gmail@gmail.com
             </div> 
         </footer> 
       </div>
