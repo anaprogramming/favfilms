@@ -11,7 +11,7 @@ import CopyButton from "./components/CopyButton";
 
 function App() {
   const [listaFilmova,setListaF]=useState([]);
-  const email = "films@gmail.com";
+  const email = "favfilms@gmail.com";
  
 
   const[sviFilmovi] = useState([
